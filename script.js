@@ -6,8 +6,8 @@ const options = document.querySelectorAll(".options button");
 const message = document.querySelector(".message");
 
 // Initialize with default images
-computer.src = "./img/stoneComputer.png";
-player.src = "./img/stonePlayer.png";
+computer.src = "img/stoneComputer.png";
+player.src = "img/stonePlayer.png";
 
 options.forEach((option) => {
   option.addEventListener("click", () => {

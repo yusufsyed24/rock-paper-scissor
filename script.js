@@ -23,11 +23,11 @@ options.forEach((option) => {
       player.classList.remove("shakePlayer");
 
       const playerChoice = option.innerHTML.toUpperCase();
-      player.src = `./img/${playerChoice}Player.png`;
+      player.src = `./assets/img/${playerChoice.toLowerCase()}Player.png`;
 
       const choices = ["STONE", "PAPER", "SCISSORS"];
       const computerChoice = choices[Math.floor(Math.random() * 3)];
-      computer.src = `./img/${computerChoice}Computer.png`;
+      computer.src = `./assets/img/${computerChoice.toLowerCase()}Computer.png`;
 
       updateScore(playerChoice, computerChoice);
       updateMessage(playerChoice, computerChoice);
